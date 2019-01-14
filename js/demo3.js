@@ -100,6 +100,7 @@ class ShapeOverlays {
       contactlist.setAttribute("style", "opacity:1");
       content.setAttribute("style", "opacity:1;");
       logo.setAttribute("style", "opacity:1;");
+      menu__item.setAttribute("style", "opacity:1");
     } else {
       elmHamburger.classList.remove('is-opened-navi');
       for (var i = 0; i < gNavItems.length; i++) {
@@ -151,20 +152,42 @@ class ShapeOverlays {
   team.addEventListener('click', () => {content.innerHTML=``});
   connect.addEventListener('click', () => {content.innerHTML=``});
 
-//@media
-// var x = window.matchMedia("(max-width: 450px)")
-// x.addListener(myFunction);
-// myFunction(x);
-// const c  = document.getElementById('case-content');
-// const menu__item = document.querySelector('.global-menu__wrap');
-// function myFunction(x) {
-//   if (x.matches) { // If media query matches
-//     projects.addEventListener('click', ()=>{
-//       c.innerHTML="nice"
-//     })
-//   } else {
-//     c.innerHTML= this.connect;
-//   }
-// }
+// @media
+var x = window.matchMedia("(max-width: 450px)")
+const c  = document.getElementById('case-content');
+c.innerHTML="";
+const menu__item = document.querySelector('.global-menu__wrap');
+x.addListener(myFunction);
+myFunction(x);
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+    projects.addEventListener('click', ()=>{
+      menu__item.setAttribute("style", "opacity:0;");
+      c.innerHTML=`<div class='newbox'>
+      <div class='box1'>
+        <span>Looper</span><sup style="color:#FFD93E">New</sup><br>
+        <span>Rent Your Ride</span><sup style="color:#F08064">New</sup><br>    
+        <span>Alpha Crypto</span><sup style="color:#03A6B4">New</sup><br>
+        <span>PritchArt</span><sup>COMING SOON</sup>
+      </div>
+      <div class='box2'>
+        <span>Giggl</span><sup>COMING SOON</sup><br
+        <span>Iraqi Souq</span><sup>COMING SOON</sup><br>
+        <span>NextWave Girls</span><sup>COMING SOON</sup><br>
+        <span>Kenergy Active</span><sup>COMING SOON</sup>
+      </div>
+      <div class='box3'>    
+      <span>Arvin</span><sup>COMING SOON</sup><br>   
+        <span>Iungo Social</span><sup>COMING SOON</sup><br>
+        <span>Kenergy Ventures</span><sup>COMING SOON</sup><br>
+        <span>KenergyLabs</span><sup>COMING SOON</sup>
+      </div>
+      </div>`
+    })
+  } 
+  // else {
+  //   c.innerHTML= this.connect;
+  // }
+}
 
 
