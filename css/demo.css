@@ -199,6 +199,7 @@ sup {
 .global-menu__item.global-menu__item--demo-3.is-opened .menu__item-label {
 	font-size: 0.30em;
 	margin-top: 0.5em;
+	padding-bottom: 0.5em;
 	letter-spacing: 0.05em;
 	color: var(--color-link);
 }
@@ -227,6 +228,7 @@ sup {
 .global-menu__item.global-menu__item--demo-3 .menu__item-label {
 	font-size: 0.30em;
 	margin-top: 0.5em;
+	padding-bottom: 0.5em;
 	letter-spacing: 0.05em;
 	color: var(--color-link);
 }
