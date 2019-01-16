@@ -1066,6 +1066,9 @@ a.demo--current {
 		margin: 6.5vw;
 		font-size: 2em;
 	}
+	.global-menu__item.global-menu__item--demo-3.is-opened .menu__item-label {
+		display: none;
+	}
 	.contacts-social-lists {
 		display: none;
 	}
