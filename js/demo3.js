@@ -115,9 +115,8 @@ class ShapeOverlays {
   });
 }());
 
-// (function() {
   const projects = document.querySelector('.menu__item-name.projects');
-  const home = document.querySelector('.menu__item-name.home');
+  const medias = document.querySelector('.menu__item-name.medias');
   const capabilities = document.querySelector('.menu__item-name.capabilities');
   const team = document.querySelector('.menu__item-name.team');
   const connect = document.querySelector('.menu__item-name.connect');
@@ -147,7 +146,7 @@ class ShapeOverlays {
       </div>`
   });
 
-  home.addEventListener('click', () => {content.innerHTML=``});
+  medias.addEventListener('click', () => {content.innerHTML=``});
   capabilities.addEventListener('click', () => {content.innerHTML=``});
   team.addEventListener('click', () => {content.innerHTML=``});
   connect.addEventListener('click', () => {content.innerHTML=``});
@@ -185,9 +184,6 @@ function myFunction(x) {
       </div>`
     })
   } 
-  // else {
-  //   c.innerHTML= this.connect;
-  // }
 }
 
 

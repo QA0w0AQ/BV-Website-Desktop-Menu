@@ -4,11 +4,11 @@
 	box-sizing: border-box;
 }
 
-html {
+/* html {
 	background: #000;
-}
+} */
 
-body {
+/* body {
 	font-family: 'Source Sans Pro', Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	min-height: 100vh;
 	color: #57585c;
@@ -17,7 +17,7 @@ body {
 	background-color: var(--color-bg);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-}
+} */
 
 .logo {
 	display: none;
@@ -53,7 +53,7 @@ sup {
 /* Color schemes */
 
 
-.demo-3 {
+.navigation {
 	--color-text: #fbd54a;
 	--color-bg: #333;
 	--color-link: #4d4f5f;
@@ -75,10 +75,10 @@ sup {
 	--button-bg: #fff;
 	--button-circle: #ada4a4;
 	--button-line: #222;
-	--color-home:#F08064;
-	--color-capabilities:#03A6B4;
-	--color-projects:#FE294D;
-	--color-team:#242B71;
+	--color-capabilities:#F08064;
+	--color-projects:#03A6B4;
+	--color-team:#FE294D;
+	--color-medias:#242B71;
 	--color-connect:#FFD93E;
 }
 .global-menu__wrap{
@@ -150,16 +150,16 @@ sup {
   font-size: 1.3vw;
 }
 
-.global-menu__wrap .global-menu__item.global-menu__item--demo-3.is-opened{
+.global-menu__wrap .global-menu__item.global-menu__item--navigation.is-opened{
 	margin: 1.5vw;
 }
 
-.global-menu__item.global-menu__item--demo-3.is-opened .menu__item-name{
+.global-menu__item.global-menu__item--navigation.is-opened .menu__item-name{
 	font-size: 1.05em;
 	padding: 0 0.25em;
 	color: #fff;
 }
-.global-menu__item.global-menu__item--demo-3.is-opened .menu__item-name::before {
+.global-menu__item.global-menu__item--navigation.is-opened .menu__item-name::before {
 	content: '';
 	position: absolute;
 	top: calc(50% - 2px);
@@ -174,29 +174,29 @@ sup {
 	transition-timing-function: cubic-bezier(0.8,0,0.2,1);
 }
 
-.global-menu__item.global-menu__item--demo-3.is-opened .menu__item-name.home::before {
-	background: var(--color-home);
+.global-menu__item.global-menu__item--navigation.is-opened .menu__item-name.medias::before {
+	background: var(--color-medias);
 }
-.global-menu__item.global-menu__item--demo-3.is-opened .menu__item-name.capabilities::before {
+.global-menu__item.global-menu__item--navigation.is-opened .menu__item-name.capabilities::before {
 	background: var(--color-capabilities);
 }
-.global-menu__item.global-menu__item--demo-3.is-opened .menu__item-name.projects::before {
+.global-menu__item.global-menu__item--navigation.is-opened .menu__item-name.projects::before {
 	background: var(--color-projects);
 }
-.global-menu__item.global-menu__item--demo-3.is-opened .menu__item-name.team::before {
+.global-menu__item.global-menu__item--navigation.is-opened .menu__item-name.team::before {
 	background: var(--color-team);
 }
-.global-menu__item.global-menu__item--demo-3.is-opened .menu__item-name.connect::before {
+.global-menu__item.global-menu__item--navigation.is-opened .menu__item-name.connect::before {
 	background: var(--color-connect);
 }
 
-.global-menu__item.global-menu__item--demo-3.is-opened:hover .menu__item-name::before,
-.global-menu__item.global-menu__item--demo-3.is-opened:focus .menu__item-name::before {
+.global-menu__item.global-menu__item--navigation.is-opened:hover .menu__item-name::before,
+.global-menu__item.global-menu__item--navigation.is-opened:focus .menu__item-name::before {
 	transform: scale3d(1,1,1);
 	transform-origin: 0% 50%;
 }
 
-.global-menu__item.global-menu__item--demo-3.is-opened .menu__item-label {
+.global-menu__item.global-menu__item--navigation.is-opened .menu__item-label {
 	font-size: 0.30em;
 	margin-top: 0.5em;
 	padding-bottom: 0.5em;
@@ -204,7 +204,7 @@ sup {
 	color: var(--color-link);
 }
 
-.global-menu__item.global-menu__item--demo-3.is-opened .menu__item-label::after {
+.global-menu__item.global-menu__item--navigation.is-opened .menu__item-label::after {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -217,25 +217,25 @@ sup {
 	transition-timing-function: cubic-bezier(0.8,0,0.2,1);
 }
 
-.global-menu__item.global-menu__item--demo-3.is-opened:hover .menu__item-label::after,
-.global-menu__item.global-menu__item--demo-3.is-opened:focus .menu__item-label::after {
+.global-menu__item.global-menu__item--navigation.is-opened:hover .menu__item-label::after,
+.global-menu__item.global-menu__item--navigation.is-opened:focus .menu__item-label::after {
 	transform: scale3d(0,1,1);
 	transform-origin: 0% 50%;
 }
 
 
-/*.global-menu__item.global-menu__item--demo-3 not open*/
-.global-menu__item.global-menu__item--demo-3 .menu__item-label {
+/*.global-menu__item.global-menu__item--navigation not open*/
+.global-menu__item.global-menu__item--navigation .menu__item-label {
 	font-size: 0.30em;
 	margin-top: 0.5em;
 	padding-bottom: 0.5em;
 	letter-spacing: 0.05em;
 	color: var(--color-link);
 }
-.global-menu__wrap .global-menu__item.global-menu__item--demo-3{
+.global-menu__wrap .global-menu__item.global-menu__item--navigation{
 	margin: 1.5vw;
 }
-.global-menu__item.global-menu__item--demo-3 .menu__item-label::after {
+.global-menu__item.global-menu__item--navigation .menu__item-label::after {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -248,8 +248,8 @@ sup {
 	transition-timing-function: cubic-bezier(0.8,0,0.2,1);
 }
 
-.global-menu__item.global-menu__item--demo-3:hover .menu__item-label::after,
-.global-menu__item.global-menu__item--demo-3:focus .menu__item-label::after {
+.global-menu__item.global-menu__item--navigation:hover .menu__item-label::after,
+.global-menu__item.global-menu__item--navigation:focus .menu__item-label::after {
 	transform: scale3d(0,1,1);
 	transform-origin: 0% 50%;
 }
@@ -491,7 +491,7 @@ a.demo--current {
 }
 
 
-.global-menu__item--demo-3 {
+.global-menu__item--navigation {
 	transition: transform 0.1s, opacity 0.1s;
 	transform: translateY(100%);
 	transition-timing-function: ease-out;
@@ -564,47 +564,47 @@ a.demo--current {
 
 
 /* demo 3 */
-.global-menu__item--demo-3.is-opened {
+.global-menu__item--navigation.is-opened {
 	transition-duration: 0.3s;
 }
 
-.global-menu__item--demo-3:nth-of-type(1) {
+.global-menu__item--navigation:nth-of-type(1) {
 	transition-delay: 0s;
 }
 
-.global-menu__item--demo-3.is-opened:nth-of-type(1) {
+.global-menu__item--navigation.is-opened:nth-of-type(1) {
 	transition-delay: 0.65s;
 }
 
-.global-menu__item--demo-3:nth-of-type(2) {
+.global-menu__item--navigation:nth-of-type(2) {
 	transition-delay: 0s;
 }
 
-.global-menu__item--demo-3.is-opened:nth-of-type(2) {
+.global-menu__item--navigation.is-opened:nth-of-type(2) {
 	transition-delay: 0.7s;
 }
 
-.global-menu__item--demo-3:nth-of-type(3) {
+.global-menu__item--navigation:nth-of-type(3) {
 	transition-delay: 0s;
 }
 
-.global-menu__item--demo-3.is-opened:nth-of-type(3) {
+.global-menu__item--navigation.is-opened:nth-of-type(3) {
 	transition-delay: 0.75s;
 }
 
-.global-menu__item--demo-3:nth-of-type(4) {
+.global-menu__item--navigation:nth-of-type(4) {
 	transition-delay: 0s;
 }
 
-.global-menu__item--demo-3.is-opened:nth-of-type(4) {
+.global-menu__item--navigation.is-opened:nth-of-type(4) {
 	transition-delay: 0.8s;
 }
 
-.global-menu__item--demo-3:nth-of-type(5) {
+.global-menu__item--navigation:nth-of-type(5) {
 	transition-delay: 0s;
 }
 
-.global-menu__item--demo-3.is-opened:nth-of-type(5) {
+.global-menu__item--navigation.is-opened:nth-of-type(5) {
 	transition-delay: 0.85s;
 }
 
@@ -1014,10 +1014,10 @@ a.demo--current {
 	.logo{
 		display: none;
 	}
-	.global-menu__wrap .global-menu__item.global-menu__item--demo-3{
+	.global-menu__wrap .global-menu__item.global-menu__item--navigation{
 		margin: 1.5vw 0vw 0vw 0vw;
 	}
-	.global-menu__wrap .global-menu__item.global-menu__item--demo-3.is-opened{
+	.global-menu__wrap .global-menu__item.global-menu__item--navigation.is-opened{
 		margin: 1.5vw 0vw 0vw 0vw;
 	}
 	.global-menu__wrap{
@@ -1056,17 +1056,17 @@ a.demo--current {
 		top: 26vw;
 	}
 
-	.global-menu__wrap .global-menu__item.global-menu__item--demo-3.is-opened {
+	.global-menu__wrap .global-menu__item.global-menu__item--navigation.is-opened {
 		display: grid;
 		margin: 6.5vw;
 		font-size: 2em;
 	}
-	.global-menu__wrap .global-menu__item.global-menu__item--demo-3 {
+	.global-menu__wrap .global-menu__item.global-menu__item--navigation {
 		display: grid;
 		margin: 6.5vw;
 		font-size: 2em;
 	}
-	.global-menu__item.global-menu__item--demo-3.is-opened .menu__item-label {
+	.global-menu__item.global-menu__item--navigation.is-opened .menu__item-label {
 		display: none;
 	}
 	.contacts-social-lists {
